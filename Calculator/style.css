@@ -1,17 +1,14 @@
-body {
-    font-family: Arial, sans-serif;
-}
 #calculator {
     max-width: 400px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #969595;
     border-radius: 5px;
     text-align: center;
 }
 #history {
     margin-top: 20px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #969595;
     padding-top: 10px;
     text-align: left;
     max-height: 200px;
@@ -23,7 +20,7 @@ button {
     font-size: 18px;
 }
 input {
-    width: calc(100% - 22px);
+    width: 300px;
     padding: 10px;
     font-size: 18px;
 }

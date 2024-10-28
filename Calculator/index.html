@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Примитивный калькулятор</title>
+    <title>Калькулятор</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,26 +11,26 @@
 <div id="calculator">
     <input type="text" id="input" disabled>
     <div>
-        <button onclick="appendToInput('7')">7</button>
-        <button onclick="appendToInput('8')">8</button>
-        <button onclick="appendToInput('9')">9</button>
-        <button onclick="appendToInput('/')">/</button>
+        <button onclick="Click('7')">7</button>
+        <button onclick="Click('8')">8</button>
+        <button onclick="Click('9')">9</button>
+        <button onclick="Click('/')">/</button>
     </div>
     <div>
-        <button onclick="appendToInput('4')">4</button>
-        <button onclick="appendToInput('5')">5</button>
-        <button onclick="appendToInput('6')">6</button>
-        <button onclick="appendToInput('*')">*</button>
+        <button onclick="Click('4')">4</button>
+        <button onclick="Click('5')">5</button>
+        <button onclick="Click('6')">6</button>
+        <button onclick="Click('*')">*</button>
     </div>
     <div>
-        <button onclick="appendToInput('1')">1</button>
-        <button onclick="appendToInput('2')">2</button>
-        <button onclick="appendToInput('3')">3</button>
-        <button onclick="appendToInput('-')">-</button>
+        <button onclick="Click('1')">1</button>
+        <button onclick="Click('2')">2</button>
+        <button onclick="Click('3')">3</button>
+        <button onclick="Click('-')">-</button>
     </div>
     <div>
-        <button onclick="appendToInput('0')">0</button>
-        <button onclick="appendToInput('+')">+</button>
+        <button onclick="Click('0')">0</button>
+        <button onclick="Click('+')">+</button>
         <button onclick="calculate()">=</button>
         <button onclick="clearInput()">C</button>
     </div>
@@ -39,7 +39,7 @@
 <div id="history"></div>
 
 <script>
-    function appendToInput(value) {
+    function Click(value) {
         const input = document.getElementById('input');
         input.value += value; 
     }
