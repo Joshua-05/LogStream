@@ -1,0 +1,7 @@
+.posts{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 500px);
+    justify-items: center;
+    margin-top: 30px;
+}

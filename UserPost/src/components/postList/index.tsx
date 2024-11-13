@@ -1,10 +1,13 @@
 import PostCard from "../postCard"
+import postData from '../../data/posts.json'
+import style from "./style.module.css"
 
 const PostList = () => {
     return(
         <>
-            <p>Hi, world</p>
-            <PostCard />
+            <div className={style.posts}>
+                {postData.map(item => <PostCard posts={item} key={item.id}/>)}
+            </div>
         </>
     )
 }
