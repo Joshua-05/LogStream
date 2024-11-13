@@ -6,7 +6,7 @@ const PostList = () => {
     return(
         <>
             <div className={style.posts}>
-                {postData.map(item => <PostCard posts={item} key={item.id}/>)}
+                {postData.map(item => <PostCard posts={item} view="def" key={item.id}/>)}
             </div>
         </>
     )

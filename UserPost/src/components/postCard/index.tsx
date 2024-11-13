@@ -3,13 +3,17 @@ import style from "./style.module.css"
 import userData from '../../data/users.json'
 
 
-const PostCard = ({posts}: PostCardProps) => {
+const PostCard = (props: PostCardProps) => {
+    const posts = props.posts
     const author = userData.find(item => item.id === posts.userId)
+    const view = props.view
     return(
         <div className={style.card}>
-            <div className={style.head}>      
-                <p>Author: </p><span>{author?.username}</span>
-            </div>
+            {view === 'def' && 
+                <div className={style.head}>      
+                    <p>Author: </p><span>{author?.username}</span>
+                </div>
+            }
             <div className={style.post}>
                 <div className={style.post_title}>
                     <p>{posts.title}</p>

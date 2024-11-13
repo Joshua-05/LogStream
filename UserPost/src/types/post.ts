@@ -7,4 +7,5 @@ export interface IPost {
 
 export interface PostCardProps {
     posts: IPost
+    view: string
 }
